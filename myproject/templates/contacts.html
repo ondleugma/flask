@@ -1,0 +1,38 @@
+<!-- templates/contacts.html -->
+{% extends "layout.html" %}
+{% block title %}Контакты{% endblock %}
+{% block content %}
+<h1>Контакты</h1>
+<div class="contacts-content">
+    <div class="contact">
+        <img src="{{ url_for('static', filename='images/con-1.jpg') }}" alt="contact" class="img-fluid">
+        <h2>Бобров Глеб Фёдорович</h2>
+        <p>Директор</p>
+    </div>
+    <div class="contact">
+        <img src="{{ url_for('static', filename='images/con-2.jpg') }}" alt="contact" class="img-fluid">
+        <h2>Тихомирова Ангелина Назаровна</h2>
+        <p>Завуч I</p>
+    </div>
+    <div class="contact">
+        <img src="{{ url_for('static', filename='images/con-3.jpg') }}" alt="contact" class="img-fluid">
+        <h2>Власов Павел Владимирович</h2>
+        <p>Физорг</p>
+    </div>
+    <div class="contact">
+        <img src="{{ url_for('static', filename='images/con-4.jpg') }}" alt="contact" class="img-fluid">
+        <h2>Козлов Роберт Глебович</h2>
+        <p>Завуч II</p>
+    </div>
+    <div class="contact">
+        <img src="{{ url_for('static', filename='images/con-5.jpg') }}" alt="contact" class="img-fluid">
+        <h2>Лукин Александр Кириллович</h2>
+        <p>Завуч III</p>
+    </div>
+    <div class="contact">
+        <img src="{{ url_for('static', filename='images/con-6.jpg') }}" alt="contact" class="img-fluid">
+        <h2>Захарова Виктория Данииловна</h2>
+        <p>Психолог</p>
+    </div>
+</div>
+{% endblock %}

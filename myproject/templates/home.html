@@ -1,0 +1,8 @@
+<!-- templates/home.html -->
+{% extends "layout.html" %}
+{% block title %}Главная{% endblock %}
+{% block content %}
+<h1>Главная страница</h1>
+<p>Сайт Ангарского Политехнического техникума.</p>
+<img src="{{ url_for('static', filename='images/apt-index.png') }}" alt="Logo" class="img-fluid">
+{% endblock %}
